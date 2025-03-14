@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Шахматные легенды нашего района</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Добавляем favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <!-- Временные стили для тестирования -->
+    <style>
+        /* Временные стили для визуального отображения контейнеров */
+        section {
+            border-top: 2px solid var(--secondary-color);
+            margin-top: 10px;
+        }
+        
+        /* Убираем пустые изображения, но не логотип */
+        img:not([src]), img[src=""], 
+        img[src="images/chess-kids.jpg"]:not(:loaded),
+        img[src="images/gallery1.jpg"]:not(:loaded),
+        img[src="images/gallery2.jpg"]:not(:loaded),
+        img[src="images/gallery3.jpg"]:not(:loaded),
+        img[src="images/gallery4.jpg"]:not(:loaded),
+        img[src="images/gallery5.jpg"]:not(:loaded),
+        img[src="images/gallery6.jpg"]:not(:loaded),
+        img[src="images/volunteer.jpg"]:not(:loaded) {
+            display: none;
+        }
+
+        /* Заглушки для мест с изображениями */
+        .empty-image-placeholder {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--accent-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            color: var(--dark-color);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Логотип Шахматные легенды нашего района">
+                </div>
+                <h1>Шахматные легенды нашего района</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">О проекте</a></li>
+                    <li><a href="#news">Новости</a></li>
+                    <li><a href="#events">Мероприятия</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#volunteer">Волонтёрство</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="container">
+            <h2>Стань легендой!</h2>
+            <p>Шахматы объединяют поколения и открывают новые возможности</p>
+            <a href="#about" class="btn">Узнать больше</a>
+        </div>
+    </div>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>О проекте</h2>
+                <div class="chess-divider">
+                    <span class="chess-piece">♟</span>
+                    <span class="chess-piece">♞</span>
+                    <span class="chess-piece">♜</span>
+                    <span class="chess-piece">♛</span>
+                    <span class="chess-piece">♚</span>
+                </div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Проект «Эстафета фестивалей «Шахматные легенды нашего района» направлен на популяризацию шахматного спорта и укрепление связи между поколениями.</p>
+                    <p>Проект предусматривает проведение шахматных фестивалей в различных районах Чувашской Республики (Мариинско-Посадском, Цивильском, Чебоксарском, Ядринском, Янтиковском).</p>
+                    <p>В программу каждого фестиваля входят: районный турнир по шахматам, мастер-классы, сеанс одновременной игры, беседа школьников с ветеранами шахмат в формате открытого микрофона.</p>
+                    <p>Девиз фестиваля «Стань легендой!» подчёркивает возможность каждого участника проявить свои способности и достичь высоких результатов в игре.</p>
+                </div>
+                <div class="about-image">
+                    <!-- Изображение заменено декоративным элементом в CSS -->
+                </div>
+            </div>
+            <a href="#" class="btn">Подробнее о проекте</a>
+        </div>
+    </section>
+
+    <section id="news" class="news">
+        <div class="container">
+            <div class="section-header">
+                <h2>Новости</h2>
+                <div class="chess-divider">
+                    <span class="chess-piece">♟</span>
+                    <span class="chess-piece">♞</span>
+                    <span class="chess-piece">♜</span>
+                    <span class="chess-piece">♛</span>
+                    <span class="chess-piece">♚</span>
+                </div>
+            </div>
+            <div class="news-container">
+                <div class="news-item">
+                    <div class="news-date">15 ноября 2024</div>
+                    <h3>Старт проекта "Шахматные легенды нашего района"</h3>
+                    <p>Мы рады объявить о начале реализации проекта "Шахматные легенды нашего района". Фестивали пройдут в 5 районах Чувашской Республики.</p>
+                    <a href="#" class="read-more">Читать далее</a>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">20 ноября 2024</div>
+                    <h3>Подготовка к первому фестивалю</h3>
+                    <p>Идёт активная подготовка к первому фестивалю, который пройдёт в Янтиковском районе. Приглашаем всех желающих!</p>
+                    <a href="#" class="read-more">Читать далее</a>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">25 ноября 2024</div>
+                    <h3>Встреча с ветеранами шахматного спорта</h3>
+                    <p>Состоялась предварительная встреча с ветеранами шахматного спорта, которые будут принимать участие в нашем проекте.</p>
+                    <a href="#" class="read-more">Читать далее</a>
+                </div>
+            </div>
+            <a href="#" class="btn">Все новости</a>
+        </div>
+    </section>
+
+    <section id="events" class="events">
+        <div class="container">
+            <div class="section-header">
+                <h2>План мероприятий</h2>
+                <div class="chess-divider">
+                    <span class="chess-piece">♟</span>
+                    <span class="chess-piece">♞</span>
+                    <span class="chess-piece">♜</span>
+                    <span class="chess-piece">♛</span>
+                    <span class="chess-piece">♚</span>
+                </div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Февраль-март 2025</div>
+                    <div class="timeline-content">
+                        <h3>Фестиваль в Янтиковском районе</h3>
+                        <p>Организация и проведение в МБОУ "Янтиковская СОШ" Янтиковского района фестиваля «Шахматные легенды нашего района», включающего районный турнир по шахматам, творческий мастер-класс, сеанс одновременной игры, беседу школьников с ветеранами шахмат.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Апрель-май 2025</div>
+                    <div class="timeline-content">
+                        <h3>Фестиваль в Чебоксарском районе</h3>
+                        <p>Организация и проведение в МБОУ «Кугесьский лицей» Чебоксарского муниципального округа Чувашской Республики фестиваля «Шахматные легенды нашего района», включающего все ключевые мероприятия проекта.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Май-июнь 2025</div>
+                    <div class="timeline-content">
+                        <h3>Фестиваль в Цивильском районе</h3>
+                        <p>Организация и проведение в МБОУ «Цивильская СОШ №1» фестиваля «Шахматные легенды нашего района» с районным турниром по шахматам, мастер-классами и сеансом одновременной игры.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Июнь-июль 2025</div>
+                    <div class="timeline-content">
+                        <h3>Фестиваль в Ядринском районе</h3>
+                        <p>Организация и проведение в МАОУ «НОШ» г.Ядрина Ядринского муниципального округа Чувашской Республики фестиваля «Шахматные легенды нашего района» с полной программой мероприятий.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Август-сентябрь 2025</div>
+                    <div class="timeline-content">
+                        <h3>Фестиваль в Мариинско-Посадском районе</h3>
+                        <p>Организация и проведение в МБОУ "Гимназия №1" г. Мариинский Посад Чувашской Республики фестиваля «Шахматные легенды нашего района» со всеми запланированными активностями.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">Полный план мероприятий</a>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Галерея</h2>
+                <div class="chess-divider">
+                    <span class="chess-piece">♟</span>
+                    <span class="chess-piece">♞</span>
+                    <span class="chess-piece">♜</span>
+                    <span class="chess-piece">♛</span>
+                    <span class="chess-piece">♚</span>
+                </div>
+            </div>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <!-- Изображения заменены декоративными элементами в CSS -->
+                </div>
+                <div class="gallery-item">
+                    <!-- Изображения заменены декоративными элементами в CSS -->
+                </div>
+                <div class="gallery-item">
+                    <!-- Изображения заменены декоративными элементами в CSS -->
+                </div>
+                <div class="gallery-item">
+                    <!-- Изображения заменены декоративными элементами в CSS -->
+                </div>
+                <div class="gallery-item">
+                    <!-- Изображения заменены декоративными элементами в CSS -->
+                </div>
+                <div class="gallery-item">
+                    <!-- Изображения заменены декоративными элементами в CSS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="volunteer" class="volunteer">
+        <div class="container">
+            <div class="section-header">
+                <h2>Волонтёрство</h2>
+                <div class="chess-divider">
+                    <span class="chess-piece">♟</span>
+                    <span class="chess-piece">♞</span>
+                    <span class="chess-piece">♜</span>
+                    <span class="chess-piece">♛</span>
+                    <span class="chess-piece">♚</span>
+                </div>
+            </div>
+            <div class="volunteer-content">
+                <div class="volunteer-text">
+                    <h3>Стань волонтёром проекта!</h3>
+                    <p>Социальное волонтёрство – это способ взаимодействия школьников и ветеранов шахматного спорта, в ходе которого старшее поколение становится наставниками юному поколению, а оно, в свою очередь, крепкой опорой для ветеранов.</p>
+                    <p>Школьники могут помочь навести порядок в квартире ветерана шахматного спорта, вынести мусор, сходить за продуктами, а иногда просто выслушать и поговорить за чашкой чая.</p>
+                    <a href="#" class="btn">Стать волонтёром</a>
+                </div>
+                <div class="volunteer-image">
+                    <!-- Изображение заменено декоративным элементом в CSS -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Контакты</h2>
+                <div class="chess-divider">
+                    <span class="chess-piece">♟</span>
+                    <span class="chess-piece">♞</span>
+                    <span class="chess-piece">♜</span>
+                    <span class="chess-piece">♛</span>
+                    <span class="chess-piece">♚</span>
+                </div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>г. Чебоксары, Чувашская Республика</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>chesslegends@example.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+7 (123) 456-78-90</p>
+                    </div>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-vk"></i></a>
+                        <a href="#"><i class="fab fa-telegram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Свяжитесь с нами</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше имя" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Ваш email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Ваше сообщение" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div>
+                        <img src="images/logo.png" alt="Логотип Шахматные легенды нашего района">
+                    </div>
+                    <p>© 2024 Шахматные легенды нашего района</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Быстрые ссылки</h4>
+                    <ul>
+                        <li><a href="#about">О проекте</a></li>
+                        <li><a href="#news">Новости</a></li>
+                        <li><a href="#events">Мероприятия</a></li>
+                        <li><a href="#gallery">Галерея</a></li>
+                        <li><a href="#volunteer">Волонтёрство</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-subscribe">
+                    <h4>Подписаться на новости</h4>
+                    <form>
+                        <input type="email" placeholder="Ваш email">
+                        <button type="submit">Подписаться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html> 
